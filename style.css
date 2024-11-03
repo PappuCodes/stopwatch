@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #eaeaeaf0;
+    --text-color: #242424;
+    --button-color: #242424;
+    --button-hover: #434343;
+    --container-color: #f2f2f2f0;
+    --button-text: #eaeaeaf0;
+}
+.dark-theme{
+    --primary-color: #0e0a25f0;
+    --text-color: #f1f1f1;
+    --button-color: #f1f1f1;
+    --button-hover: #b8b8b8;
+    --container-color: #0e0a25f0;
+    --button-text: #0e0a25f0;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+#navBar {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#moon{
+    width: 30px;
+    cursor:pointer;
+}
+
+#myH1{
+    font-size: 4rem;
+    font-family: monospace;
+    color: var(--text-color);
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border: 5px solid;
+    border-radius: 60px;
+    background-color: var(--container-color);
+}
+#gitBtn {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: var(--button-text);
+    transition: background-color  0.5s ease;
+    background-color: var(--button-color);
+    margin-top: 30px;
+}
+
+#display{
+    font-size: 4rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 30px;
+
+}
+
+#controls button{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: var(--button-text);
+    transition: background-color  0.5s ease;
+
+
+}
+#startBtn{
+    background-color: var(--button-color);
+}
+
+#startBtn:hover{
+    background-color: var(--button-hover);
+}
+#stopBtn{
+    background-color: var(--button-color);
+}
+
+#stopBtn:hover{
+    background-color: var(--button-hover);
+}
+
+#resetBtn{
+    background-color: var(--button-color);
+}
+
+#resetBtn:hover{
+    background-color: var(--button-hover);
+}
+
+
+#gitBtn {
+    text-decoration: none; /* Removes underline from the link */
+    color: var(--button-text);
+    
+}
+
+#gitBtn:hover{
+    background-color: var(--button-hover)
+}
